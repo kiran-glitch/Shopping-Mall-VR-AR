@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{url_for('static', filename='images/glassdt.png')}}" width="100%" id="ProductImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/glassdt.png')}}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/glassdt1.png')}}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/glassdt2.png')}}" width="100%" class="small-img">
+                    </div>
+                     <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/glassdt3.png')}}" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" id="item1">
+                <p>Home/Tables</p>
+                <h1 id="title">Glass Table</h1>
+                <h4>$600.00</h4>
+                <input type="number" value="1">
+                <a href="/cart" class="add-cart cart1">Add To Cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+        
+        
+        
+
+	<div class="small-container">
+		<div class="row">
+			<div class="col-4">
+                <a href="/dinningtable"><img src="{{url_for('static', filename='images/dinningtable.png')}}"></a>
+				<h4>Dinning Table</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$800.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/tablesofa"><img src="{{url_for('static', filename='images/tablesofa.png')}}"></a>
+				<h4>Table sofa</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$1000.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/bluedress"><img src="{{url_for('static', filename='images/bluedress.png')}}"></a>
+				<h4>Blue Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$130.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/sofac"><img src="{{url_for('static', filename='images/sofac.png')}}"></a>
+				<h4>Sofa Combination</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$1100.00</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+

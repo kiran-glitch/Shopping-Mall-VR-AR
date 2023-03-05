@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charser="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping Mall</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="{{url_for('static', filename='images/logo.png')}}" width="125px">
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="/">Home</a></li>
+					<li><a href="https://webxr.run/8wRA9lYVmQxA5">Dress store</a></li>
+					<li><a href="https://webxr.run/vW8G3ZGbzJwby">Furniture store</a></li>
+	    			<li><a href="/product">Product</a></li>
+                    <li><a href="https://webxr.run/3Wm7V6vQZ0omD">Try</a></li>
+	    			<li><a href="/cart">Add to Cart</a></li>
+	    		</ul>
+	    	</nav>
+	    	<img src="{{url_for('static', filename='images/cart.png')}}" width="30px" height="30px">
+	    	<img src="{{url_for('static', filename='images/menu.png')}}" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+    <script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+    
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+         SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+         SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+          SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+        
+    </script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

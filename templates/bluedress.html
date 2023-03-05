@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{url_for('static', filename='images/bluedress.png')}}" width="100%" id="ProductImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/bluedress.png')}}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/bluedress1.png')}}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/bluedress2.png')}}" width="100%" class="small-img">
+                    </div>
+                     <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/bluedress3.png')}}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{url_for('static', filename='images/bluedress4.png')}}" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" id="item1">
+                <p>Home/Dresses</p>
+                <h1 id="title">Blue Dress with Shoes</h1>
+                <h4>$130.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="/cart" class="add-cart cart1">Add To Cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+        
+        
+        
+
+	<div class="small-container">
+		<div class="row">
+			<div class="col-4">
+                <a href="/darkbluedress"><img src="{{url_for('static', filename='images/darkbluedress.png')}}"></a>
+				<h4>Dark Blue Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$135.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/pinktshirtimg src="{{url_for('static', filename='images/pinkshirt.png')}}"></a>
+				<h4>Woman Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$40.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/blackdress"><img src="{{url_for('static', filename='images/blackdress.png')}}"></a>
+				<h4>Black Dress</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$80.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/yellowdress"><img src="{{url_for('static', filename='images/yellowdress.png')}}"></a>
+				<h4>Yellow Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$125.00</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

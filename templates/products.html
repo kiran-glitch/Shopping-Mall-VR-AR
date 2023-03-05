@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+		<div class="row">
+			<div class="col-4">
+                <a href="/tshirt"><img src = "{{url_for('static',filename='images/tshirt.png')}}"></a>
+				<h4>T-Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/pinktshirt"><img src="{{url_for('static', filename='images/pinktshirt.png')}}"></a>
+				<h4>Woman Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$40.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/blackdress"><img src="{{url_for('static', filename='images/blackdress.png')}}"></a>
+				<h4>Black Dress</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$80.00</p>
+			</div>
+            <div class="col-4">
+                <a href="/partydress"><img src="{{url_for('static', filename='images/partydress.png')}}"></a>
+				<h4>Party Dress</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$100.00</p>
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-4">
+                <a href="/yellowdress"><img src="{{url_for('static', filename='images/yellowdress.png')}}"></a>
+				<h4>Yellow Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$125.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/waterdress"><img src="{{url_for('static', filename='images/watercolordress.png')}}"></a>
+				<h4>Water Color Dress</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$110.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/reddress"><img src="{{url_for('static', filename='images/reddress.png')}}"></a>
+				<h4>Red Dress With Hat</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-" aria-hidden="true"></i>
+				</div>
+				<p>$120.00</p>
+			</div>
+            <div class="col-4">
+                <a href="/bluedress"><img src="{{url_for('static', filename='images/bluedress.png')}}"></a>
+				<h4>Blue Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$130.00</p>
+			</div>
+		</div>
+        
+        <div class="row">
+			<div class="col-4">
+                <a href="/darkbluedress"><img src="{{url_for('static', filename='images/darkbluedress.png')}}"></a>
+				<h4>Dark Blue Dress With Shoes</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$135.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/sofac"><img src="{{url_for('static', filename='images/sofac.png')}}"></a>
+				<h4>Sofa Combination</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$1100.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/tablesofa"><img src="{{url_for('static', filename='images/tablesofa.png')}}"></a>
+				<h4>Table sofa</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$1000.00</p>
+			</div>
+           <div class="col-4">
+                <a href="/sofa"><img src="{{url_for('static', filename='images/sofa.png')}}"></a>
+				<h4>Sofa</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$950.00</p>
+			</div>
+		</div>
+        
+        <div class="row">
+			<div class="col-4">
+                <a href="/dinningtable"><img src="{{url_for('static', filename='images/dinningtable.png')}}"></a>
+				<h4>Dinning Table</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+				<p>$800.00</p>
+			</div>
+			<div class="col-4">
+                <a href="/glasstable"><img src="{{url_for('static', filename='images/glassdt.png')}}"></a>
+				<h4>Glass Table</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$600.00</p>
+			</div>
+		</div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+	</div>
+{% endblock %}
